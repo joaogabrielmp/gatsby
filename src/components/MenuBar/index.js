@@ -1,11 +1,11 @@
 import React from 'react'
 
 import {
-  SearchAlt2 as Search,
   UpArrowAlt as Arrow,
+  SearchAlt2 as Search,
   Bulb as Light,
 } from 'styled-icons/boxicons-regular'
-import { Home, Grid } from 'styled-icons/boxicons-solid'
+import { Grid, Home } from 'styled-icons/boxicons-solid'
 
 import * as S from './styles'
 
