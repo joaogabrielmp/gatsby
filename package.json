@@ -36,7 +36,6 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "lint": "eslint --ignore-path .gitignore . --ext .js,.jsx",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "develop:playground": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
