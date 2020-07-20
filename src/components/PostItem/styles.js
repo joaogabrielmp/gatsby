@@ -5,6 +5,7 @@ export const PostItemLink = styled(Link)`
   color: #8899a6;
   display: flex;
   text-decoration: none;
+
   &:hover {
     color: #1fa1f2;
   }
