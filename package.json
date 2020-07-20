@@ -36,6 +36,7 @@
     "lint": "eslint --ignore-path .gitignore . --ext .js,.jsx",
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "develop:playground": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
