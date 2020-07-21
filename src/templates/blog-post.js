@@ -7,7 +7,7 @@ const BlogPost = ({ data }) => {
   return (
     <>
       <h1>Title: {post.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ html: post.html }} />
+      <div dangerouslySetInnerHTML={{ __html: post.html }} />
     </>
   )
 }
