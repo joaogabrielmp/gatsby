@@ -32,6 +32,7 @@ module.exports = {
       "react/jsx-one-expression-per-line": "off",
       "react/jsx-props-no-spreading": "off",
       "react/forbid-prop-types": "off",
-      "radix": "off"
+      "radix": "off",
+      "no-underscore-dangle": 'off'
     }
 };
