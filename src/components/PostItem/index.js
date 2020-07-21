@@ -27,7 +27,7 @@ const PostItem = ({
 )
 
 PostItem.defaultProps = {
-  background: PropTypes.string,
+  background: '',
 }
 
 PostItem.propTypes = {
