@@ -16,6 +16,7 @@ const postQuery = `{
           description
           title
         }
+        timeToRead
         excerpt(pruneLength: 5000)
       }
     }
