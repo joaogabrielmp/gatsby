@@ -6,17 +6,23 @@ import {
   Bulb as Light,
 } from 'styled-icons/boxicons-regular'
 import { Grid, Home } from 'styled-icons/boxicons-solid'
+import { ThList as List } from 'styled-icons/typicons'
 
 import * as S from './styles'
 
 const MenuBar = () => {
   const [theme, setTheme] = useState(null)
+  const [display, setDisplay] = useState(null)
 
   const isDarkMode = theme === 'dark'
+  const isListMode = display === 'list'
 
   useEffect(() => {
     setTheme(window.__theme)
+    setDisplay(window.__display)
+
     window.__onThemeChange = () => setTheme(window.__theme)
+    window.__onDisplayChange = () => setDisplay(window.__display)
   }, [])
 
   return (
@@ -43,8 +49,13 @@ const MenuBar = () => {
         >
           <Light />
         </S.MenuBarItem>
-        <S.MenuBarItem title="Mudar visualização">
-          <Grid />
+        <S.MenuBarItem
+          title="Mudar visualização"
+          onClick={() => {
+            window.__setPreferredDisplay(isListMode ? 'grid' : 'list')
+          }}
+        >
+          {isListMode ? <Grid /> : <List />}
         </S.MenuBarItem>
         <S.MenuBarItem title="Ir para o Topo">
           <Arrow />
