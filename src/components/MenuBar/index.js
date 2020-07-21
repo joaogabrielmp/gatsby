@@ -8,6 +8,7 @@ import { Grid, Home } from 'styled-icons/boxicons-solid'
 import { ThList as List } from 'styled-icons/typicons'
 
 import getThemeColor from '../../utils/getThemeColor'
+import * as GA from './trackers'
 
 import * as S from './styles'
 
@@ -73,7 +74,13 @@ const MenuBar = () => {
         >
           {isListMode ? <Grid /> : <List />}
         </S.MenuBarItem>
-        <S.MenuBarItem title="Ir para o Topo">
+        <S.MenuBarItem
+          title="Ir para o Topo"
+          onClick={() => {
+            GA.topClickTrack()
+            window.scroll({ top: 0, behavior: 'smooth' })
+          }}
+        >
           <Arrow />
         </S.MenuBarItem>
       </S.MenuBarGroup>
