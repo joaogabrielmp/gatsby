@@ -16,7 +16,7 @@ const AboutPage = () => (
       <h1>Sobre mim</h1>
       <p>Meu nome é John Doe.</p>
 
-      <p>Já passei por empresas como John Doe Business , </p>
+      <p>Já passei por empresas como John Doe Business.</p>
 
       <p>
         Eu amo trabalhar em equipe e sou bem comunicativo. No meu tempo livre,
